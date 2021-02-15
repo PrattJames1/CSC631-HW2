@@ -4,16 +4,17 @@ using UnityEngine;
 
 public class ThirdPersonMovement : MonoBehaviour
 {
-    public CharacterController controller;
+    public Rigidbody controller;
     public Transform cam;
 
     public float speed = 6f;
 
     public float turnSmoothTime = 0.1f;
     private float turnSmoothVelocity;
+    [SerializeField] private float gravityMultiplier = 1;
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -27,7 +28,12 @@ public class ThirdPersonMovement : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             
-            controller.Move(moveDir.normalized * speed * Time.deltaTime);
+            controller.velocity = (moveDir.normalized * (speed * Time.fixedDeltaTime));
+            controller.velocity = new Vector3(controller.velocity.x, Physics.gravity.y * Time.fixedDeltaTime + gravityMultiplier, controller.velocity.z);
+        }
+        else
+        {
+            controller.velocity = new Vector3(0f, Physics.gravity.y * Time.fixedDeltaTime + gravityMultiplier, 0f);
         }
     }
 }
