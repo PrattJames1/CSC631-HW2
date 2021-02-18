@@ -3,7 +3,9 @@ guid: 26f9c9845a1c28b46abe910c3a1c679a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - DirectionalLight: {instanceID: 0}
+  - Preset: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
