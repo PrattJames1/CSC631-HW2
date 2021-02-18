@@ -16,13 +16,13 @@ public class LightingManager : MonoBehaviour
             return;
         if (Application.isPlaying)
         {
-            //TimeOfDay = 12; //High noon
-            
+            TimeOfDay = 12; //High noon
+            /*
             TimeOfDay += 0.01f; //Night changes to day
             //TimeOfDay += TimeOfDay.deltaTime;
             TimeOfDay %= 24; //Clamp between 0-24
             UpdateLighting(TimeOfDay / 24f);
-            
+            */
         }
         else
         {
