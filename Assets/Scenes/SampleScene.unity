@@ -961,7 +961,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.20925702, y: 0.000000006149415, z: -0.0000000013159424, w: 0.97786075}
+  m_LocalRotation: {x: 0.20925704, y: -0.0000000071775976, z: 0.000000001535968, w: 0.97786075}
   m_LocalPosition: {x: 0, y: 15.137623, z: -13.632525}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1027,6 +1027,7 @@ GameObject:
   - component: {fileID: 966861708}
   - component: {fileID: 966861710}
   - component: {fileID: 966861709}
+  - component: {fileID: 966861711}
   m_Layer: 0
   m_Name: GFX
   m_TagString: Untagged
@@ -1098,6 +1099,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966861707}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &966861711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966861707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65cf033b261254053941875d8b9f035f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  material1: {fileID: 2100000, guid: 0ec1a61decd6541a1880d295905602d9, type: 2}
 --- !u!1 &1380203356
 GameObject:
   m_ObjectHideFlags: 3
@@ -1164,7 +1178,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1380203356}
-  m_LocalRotation: {x: 0.22346456, y: 0.000000009771276, z: -0.0000000022401836, w: 0.9747121}
+  m_LocalRotation: {x: 0.2234646, y: -0.000000020876787, z: 0.0000000047862567, w: 0.9747121}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
